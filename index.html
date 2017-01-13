@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Webpack Package</title>
+    <script src="assets/hexlet-minesweeper.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="point"></div>
+
+    <script type="text/javascript">
+      window.onload = (event) => {
+        const element = document.getElementById('point');
+        const game = new HexletMinesweeper.Game(element);
+        game.run();
+      };
+    </script>
+  </body>
+</html>
